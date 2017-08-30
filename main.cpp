@@ -15,6 +15,8 @@ int helloWorld() {
 //region garena sandbox
 int garena201708_q01();
 
+int garena201708_q02();
+
 int garena201708_q01() {
   char p1[] = "Hello";
   char* p2 = "Hi";
@@ -35,10 +37,25 @@ int garena201708_q01() {
   */
 
 }
+
+int garena201708_q02() {
+  int n = 0x12345678;
+  char* p;
+  p = (char*)&n;
+  for (int i=0; i<=3; i++) {
+    printf("%02x ", (unsigned char)p[i]);
+  }
+
+  /*
+  expected output
+  78 56 34 12
+  */
+}
 //endregion garena sandbox
 
 
 int main() {
   //return helloWorld();
-  return garena201708_q01();
+  //return garena201708_q01();
+  return garena201708_q02();
 }
