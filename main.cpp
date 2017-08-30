@@ -1,12 +1,19 @@
 #include <iostream>
 
+//region jetbrains template
 int helloWorld();
-int garena201708_q01();
 
-int main() {
-  //return helloWorld();
-  return garena201708_q01();
+int helloWorld() {
+  std::cout << "Hello, World!" << std::endl;
+  char s[] = "";
+  std::cout << sizeof(s);
+  return 0;
 }
+//endregion jetbrains template
+
+
+//region garena sandbox
+int garena201708_q01();
 
 int garena201708_q01() {
   char p1[] = "Hello";
@@ -28,10 +35,10 @@ int garena201708_q01() {
   */
 
 }
+//endregion garena sandbox
 
-int helloWorld() {
-  std::cout << "Hello, World!" << std::endl;
-  char s[] = "";
-  std::cout << sizeof(s);
-  return 0;
+
+int main() {
+  //return helloWorld();
+  return garena201708_q01();
 }
